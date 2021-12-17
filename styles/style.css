@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "font-1";
+  src: url("/assets/fonts/Merriweather-Regular.ttf");
+}
+
+:root {
+  --main-color: rgb(170, 241, 55);
+  --second-color: #010122;
+  --white: rgb(248, 248, 248);
+  --black: rgb(32, 32, 32);
+  --br: 20px;
+  --font-1: "font-1", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url(/assets/img/bg.jpg) center/cover fixed;
+  font-family: "font-1";
+  min-height: 400vh;
+  padding: 15px;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--white);
+  font-family: "font-1";
+}
+
+.head-contenu {
+  padding-top: 40px;
+  width: 80%;
+  min-height: 300px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */
