@@ -28,10 +28,8 @@ html {
     background: url(/assets/img/bg.jpg) center/cover fixed;
     font-family: "font-1";
     min-height: 400vh;
-    padding: 15px;
-    
+    padding: 10px 45px; 
   }
-
 li{
 list-style: none;
 }
@@ -39,7 +37,13 @@ a,
 a:visited{
     color: white;
 }
-
+a{
+  text-decoration: none;
+}
+p{
+  font-size: 0.8rem;
+  line-height: 30px;
+}
 // Centrer un enfant unique
 @mixin centerChild {
   display: flex;
@@ -53,15 +57,86 @@ a:visited{
   align-items: center;
 }
 
-h1{
+h1{ 
     text-align: center;
     font-size: 3rem;
     color: var(--white);
    font-family: "font-1";
 }
+header{
+  margin-top: 100px;
+}
 .head-contenu{
-    padding-top: 40px;
-    width: 80%;
+    width: 100%;
     min-height: 300px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.head-contenu h1{
+  font-size: 4rem;
+}
+.item-nav{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-top: 80px;
+  padding: 10px;
+  background: transparentize($color: #d1cccc, $amount: 0.7);
+}
+.item-nav nav ul {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.item-nav ul .active{
+  background-color: #010122;
+}
+.item-nav nav ul li{
+  margin-right: 40px;
+}
+
+/* section -1 */
+
+.section-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  padding: 40px;
+}
+.section-1 img{
+  width: 100%;
+  margin-top: 70px;
+}
+.info-section, h2, .btn{
+margin-top: 32px;
+}
+
+/* SECTION 2 */
+
+.section-2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: white;
+  border-top: 1px solid rgb(223, 220, 220);
+}
+.section-2 img{
+  width: 100%;
+  margin-top: 70px;
+}
+.item-1, .item-2, h2{
+  text-align: center;
+}
+.item-1, .item-2{
+  padding: 50px;
+}
+
+.item-1 {
+  border-right: 1px solid rgb(223, 220, 220);
 }
