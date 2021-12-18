@@ -26,8 +26,10 @@ html {
 body {
   background: url(/assets/img/bg.jpg) center/cover fixed;
   font-family: "font-1";
-  min-height: 400vh;
-  padding: 10px 45px;
+  min-height: 100vh;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 li {
@@ -52,16 +54,17 @@ h1 {
   text-align: center;
   font-size: 3rem;
   color: var(--white);
-  font-family: "font-1";
+  font-family: "font-1", Arial, Helvetica, sans-serif;
 }
 
 header {
   margin-top: 100px;
+  min-height: 65vh;
 }
 
 .head-contenu {
   width: 100%;
-  min-height: 300px;
+  min-height: 450px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,6 +84,7 @@ header {
 
 .head-contenu h1 {
   font-size: 4rem;
+  font-family: "font-1";
 }
 
 .item-nav {
@@ -176,6 +180,18 @@ header {
 
 .item-1 {
   border-right: 1px solid #dfdcdc;
+}
+
+/* FORMULAIRE */
+form {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-area: "";
 }
 
 .btn {
